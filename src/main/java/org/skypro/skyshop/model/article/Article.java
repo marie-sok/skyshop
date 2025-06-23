@@ -65,3 +65,4 @@ public class Article implements Searchable {
         return articleTitle;
     }
 }
+

@@ -18,7 +18,7 @@ public class App {
         Product product2 = new FixPriceProduct(UUID.randomUUID(), "USB-C Cable");
         Product product3 = new DiscountedProduct(UUID.randomUUID(), "Earphones", 4500, 30);
         Product product4 = new SimpleProduct(UUID.randomUUID(), "Adapter", 700);
-        Product product5 = new SimpleProduct(UUID.randomUUID(), "Homepode", 15000);
+        Product product5 = new SimpleProduct(UUID.randomUUID(), "Homepod", 15000);
         Product product6 = new SimpleProduct(UUID.randomUUID(), "Smart-watch", 3500);
         Product product7 = new SimpleProduct(UUID.randomUUID(), "Resident Evil: Village.PS5 Version", 3800);
         Product product8 = new DiscountedProduct(UUID.randomUUID(), "Disco Elysium. PS5 Version", 2500, 40);
@@ -122,7 +122,7 @@ public class App {
         }
 
         try {
-            product5 = new SimpleProduct(UUID.randomUUID(),"Homepode", 15000);
+            product5 = new SimpleProduct(UUID.randomUUID(),"HomePod", 15000);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
 

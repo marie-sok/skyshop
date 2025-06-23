@@ -7,12 +7,11 @@ public interface Searchable {
 
     String getContentType();
 
-    String getName();
-
     UUID getId();
 
     default String getStringRepresentation() {
         return getName() + "-" + getContentType();
     }
+    String getName();
 }
 

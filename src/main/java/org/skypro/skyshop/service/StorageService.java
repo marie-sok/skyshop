@@ -1,5 +1,6 @@
 package org.skypro.skyshop.service;
 
+
 import org.skypro.skyshop.model.article.Article;
 import org.skypro.skyshop.model.product.DiscountedProduct;
 import org.skypro.skyshop.model.product.FixPriceProduct;

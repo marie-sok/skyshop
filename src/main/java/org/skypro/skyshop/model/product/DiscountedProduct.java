@@ -28,14 +28,15 @@ public class DiscountedProduct extends Product {
         return price - (price * discount / 100);
     }
 
+
     @Override
     public double getPrice() {
         return calculateDiscountedPrice();
     }
 
     @Override
-    public String getFormattedPrice() {
-        return "";
+    public boolean getFormattedPrice() {
+        return false;
     }
 
     @Override

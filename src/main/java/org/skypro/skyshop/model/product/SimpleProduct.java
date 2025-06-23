@@ -24,8 +24,8 @@ public class SimpleProduct extends Product {
     }
 
     @Override
-    public String getFormattedPrice() {
-        return "";
+    public boolean getFormattedPrice() {
+        return false;
     }
 
     @Override
@@ -56,5 +56,4 @@ public class SimpleProduct extends Product {
         return Objects.hash(super.hashCode(), price);
     }
 }
-
 

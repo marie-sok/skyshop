@@ -38,8 +38,8 @@ public abstract class Product implements Searchable {
 
     public abstract double getPrice();
 
-    public abstract String getFormattedPrice();
-
+    public abstract boolean getFormattedPrice();
+        
     public abstract boolean isSpecial();
 
     @JsonIgnore

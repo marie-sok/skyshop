@@ -16,8 +16,8 @@ public class FixPriceProduct extends Product {
     }
 
     @Override
-    public String getFormattedPrice() {
-        return "";
+    public boolean getFormattedPrice() {
+        return false;
     }
 
     @Override

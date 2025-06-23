@@ -1,6 +1,6 @@
 package org.skypro.skyshop.service;
 
-import org.skypro.skyshop.model.SearchResult;
+import org.skypro.skyshop.model.SearchResults;
 import org.skypro.skyshop.model.search.Searchable;
 import org.springframework.stereotype.Service;
 
@@ -19,13 +19,13 @@ public class SearchService {
         return storageService.getAllSearchableResults();
     }
 
-    public Collection<SearchResult> search(String query) {
+    public Collection<SearchResults> search(String query) {
         if (query == null || query.isEmpty()) {
             throw new IllegalArgumentException("Type name of product or category");
         }
         return getAllItemsForSearch().stream()
                 .filter(searchable -> isValidSearchable(searchable) && containsSearchTerm(query, searchable))
-                .map(SearchResult::fromSearchable)
+                .map(SearchResults::fromSearchable)
                 .collect(Collectors.toList());
 
     }

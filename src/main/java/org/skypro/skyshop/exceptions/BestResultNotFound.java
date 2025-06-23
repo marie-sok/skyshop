@@ -14,3 +14,4 @@ public class BestResultNotFound extends Exception {
         return "For Searching " + name + " is not found" + '}';
     }
 }
+

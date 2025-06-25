@@ -67,3 +67,4 @@ public class Article implements Searchable {
 }
 
 
+

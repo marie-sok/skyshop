@@ -38,5 +38,3 @@ public class SearchService {
         return searchable.getSearchTerm().toLowerCase().contains(name.toLowerCase());
     }
 }
-
-

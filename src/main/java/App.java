@@ -1,4 +1,4 @@
-import org.skypro.skyshop.basket.ProductBasket;
+import org.skypro.skyshop.model.basket.ProductBasket;
 import org.skypro.skyshop.engine.SearchEngine;
 import org.skypro.skyshop.exceptions.BestResultNotFound;
 import org.skypro.skyshop.model.article.Article;

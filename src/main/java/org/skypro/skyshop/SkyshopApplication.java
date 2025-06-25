@@ -10,5 +10,3 @@ public class SkyshopApplication {
         SpringApplication.run(SkyshopApplication.class, args);
     }
 }
-
-

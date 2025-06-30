@@ -64,7 +64,12 @@ public class StorageService {
             articlesMap.put(article.getId(), article);
         }
     }
+
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.empty();
+    }
 }
+
 
 
 

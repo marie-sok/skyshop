@@ -44,11 +44,13 @@ public class ShopController {
     @GetMapping("/basket/{id}")
     public String addProduct(@PathVariable("id") UUID id) {
         basketService.addProductToBasket(id);
+        System.out.println("Request to /basket/" + id + "is received");
         return "Product successfully added";
     }
 
     @GetMapping("/basket")
     public UserBasket getUserBasket() {
+        System.out.println("Request to /basket/ is received");
         return basketService.getUserBasket();
     }
 }
